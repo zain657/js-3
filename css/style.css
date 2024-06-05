@@ -1,0 +1,137 @@
+:root{
+    --main-color:#fec260;
+    --shadow-main-color:#fec26055;
+    --main-font:"PT Sans Caption", sans-serif;
+    --logo-font: "Pacifico", cursive;
+    --main-bckgroundColor:#f7ecde;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+main{
+    z-index: -12;
+    height: 100vh;
+    width: 100%;
+    position: absolute;
+    background-color: var(--main-bckgroundColor);
+}
+
+.height-table{
+    background-color: var(--main-bckgroundColor);
+    position: relative;
+    max-height:12.875rem;
+    overflow-y: scroll;
+}
+
+h1{
+    font-family: var(--logo-font);
+}
+
+
+.h-border {
+    position: relative;
+    border-bottom: 2px dotted black;
+    font-size: 50px;
+}
+
+
+.ho-text::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    bottom:3.1rem;
+    transform: translateX(-50%);
+    width: 16.6875rem;
+    height: 1.5625rem;
+    background-color: var(--main-color);
+    transition: height 0.3s ease-out;
+}
+
+.ho-text:hover::after {
+    height: 2.5rem;
+}
+
+
+.inf{
+    font-family:"Righteous", sans-serif;
+    background-image: linear-gradient(to right, #3ca55c, #ffc107);
+    color: transparent;
+    background-clip: text;
+}
+
+
+::selection {
+    background-color: var(--main-color);
+    color: #352e28;
+}
+
+
+form{
+    font-family: var(--main-font);
+}
+form label{
+    font-weight: 700;
+}
+.form-control:focus {
+    border-color: var(--main-color);
+    box-shadow: 0 0 0 0.25rem var(--shadow-main-color);
+}
+
+.btn-submit {
+    position: absolute;
+    transform: translateX(-50%);
+    left: 50%;
+    --bs-btn-color: #fff;
+    --bs-btn-bg: #d1512d;
+    --bs-btn-border-color: #d1512d;
+    --bs-btn-hover-color: #fff;
+    --bs-btn-hover-bg: #bb4120;
+    --bs-btn-hover-border-color: #a03315;
+}
+
+
+.borderrr{
+    padding: 20px;
+    padding-bottom: 5rem;
+    border-bottom: 2px dotted black;
+}
+
+.table td, .table th {
+    vertical-align: middle;
+}
+
+.modal {
+    top:25%;
+}
+
+.circles .s{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+
+ol i{
+    color: #f15f5d;
+}
+
+.circles :nth-child(1){
+    background-color: #f15f5d;
+}
+.circles :nth-child(2){
+    background-color: #febe2e;
+}
+.circles :nth-child(3){
+    background-color: #4db748;
+}
+
+.modal-header{
+    border-bottom: none;
+}
+
+.modal {
+    font-family: var(--main-font);
+}
