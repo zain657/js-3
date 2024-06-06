@@ -87,7 +87,7 @@ function display(arr){
                 <th scope="row">${i+1}</th>
                 <td>${arr[i].siteName}</td>
                 <td><button class="btn btn-visit btn-success" data-index="${i}">
-                        <a href='${arr[i].link}' target='_blank'><iclass="fa-solid fa-eye pe-2"></iclass=>Visit</a>
+                        <a href='${arr[i].link}' target='_blank'><i class="fa-solid fa-eye pe-2"></i> Visit</a>
                     </button>
                 </td>
                 <td><button id='deletBtn' class="btn btn-delete pe-2 btn-danger" data-index="${i}">
